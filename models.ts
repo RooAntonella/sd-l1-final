@@ -1,6 +1,8 @@
 import * as jsonfile from "jsonfile";
+import * as path from "path";
 
-const FILE_PATH = "./src/pelis.json";
+const FILE_PATH = path.resolve(__dirname, "pelis.json");
+
 
 type Peli = {
   id: number;
